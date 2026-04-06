@@ -45,7 +45,7 @@ ClaimHub automates the reconciliation of TPA (Third Party Administrator) panel p
 
 **All patient data stays on the clinic's own PC** — the app only contacts the server to verify the license key.
 
-Built by [Tagenda Cemerlang Sdn Bhd](https://claimhub.cc).
+Built by [ClaimHub Services](https://claimhub.cc).
 
 ## License
 
