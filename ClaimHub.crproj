@@ -1,0 +1,25 @@
+<project outputDir="Installer\obfuscated" baseDir="Installer\publish" xmlns="http://confuser.codeplex.com">
+  <rule pattern="true" preset="normal" inherit="false">
+    <!-- Rename all types, methods, fields -->
+    <protection id="rename">
+      <argument name="mode" value="unicode" />
+    </protection>
+    <!-- Encrypt string literals -->
+    <protection id="str encrypter" />
+    <!-- Obfuscate control flow -->
+    <protection id="ctrl flow" />
+    <!-- Anti-tamper: crash if DLLs are patched -->
+    <protection id="anti tamper" />
+    <!-- Anti-dump: prevent memory dumping -->
+    <protection id="anti dump" />
+    <!-- Watermark build -->
+    <protection id="watermark" />
+  </rule>
+
+  <!-- Main application assemblies to obfuscate -->
+  <module path="AR.Web.exe" />
+  <module path="AR.Application.dll" />
+  <module path="AR.Domain.dll" />
+  <module path="AR.Infrastructure.dll" />
+  <module path="AR.Shared.dll" />
+</project>
